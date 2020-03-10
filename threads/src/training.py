@@ -60,16 +60,16 @@ class Account():
         print(f'Depositing {amount}')
         # Simulates a database read and write
         state = self.balance
-        state += amount
         time.sleep(0.1)
+        state += amount
         self.balance = state
 
     def withdrawal(self, amount):
         print(f'Withdrawing {amount}')
         # Simulates a database read and write
         state = self.balance
-        state -= amount
         time.sleep(0.1)
+        state -= amount
         self.balance = state
 
 

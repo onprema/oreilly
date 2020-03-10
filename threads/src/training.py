@@ -40,14 +40,6 @@ def visit_website(url):
     r = requests.get(url) 
     print(f'{url} returned {r.status_code} after {r.elapsed} seconds')
 
-#def visit_website(url):
-#    #"""Makes a request to a url and prints the status code and elapsed time"""
-#    #r = requests.get(url) 
-#    #print(f'{url} returned {r.status_code} after {r.elapsed} seconds')
-#    import time
-#    import random
-#    time.sleep(random.randint(0,5))
-#    print(url)
 
 
 

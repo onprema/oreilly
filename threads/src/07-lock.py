@@ -15,3 +15,17 @@ if __name__ == '__main__':
     # Release the lock
     lock.release()
     print(lock)
+
+    """
+
+    lock = threading.Lock()
+
+    SHARED_DATA = 1
+
+    def func():
+        
+        lock.acquire()
+        SHARED_DATA += 1
+        lock.release()
+
+    """

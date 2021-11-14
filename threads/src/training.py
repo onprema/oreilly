@@ -2,6 +2,7 @@
 import requests
 import time
 import threading
+import ssl
 
 
 WEBSITES = [
@@ -37,8 +38,14 @@ WEBSITES = [
 
 def visit_website(url):
     """Makes a request to a url and prints the status code and elapsed time"""
-    r = requests.get(url) 
-    print(f'{url} returned {r.status_code} after {r.elapsed} seconds')
+    try:
+        response = requests.get(url) 
+        print(f'{url} returned {response.status_code} after {response.elapsed} seconds')
+    except ssl.SSLCertVerificationError as e:
+        pass
+    except requests.exceptions.SSLError as e:
+        pass
+
 
 
 

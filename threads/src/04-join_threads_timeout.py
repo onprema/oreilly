@@ -9,5 +9,5 @@ if __name__ == '__main__':
         # Create, start and join a daemon thread that times out
         t = threading.Thread(target=visit_website, args=[website], daemon=True)
         t.start()
-        t.join(timeout=0.1)
+        t.join(timeout=1)
     print('Main thread ending')

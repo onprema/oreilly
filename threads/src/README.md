@@ -26,3 +26,5 @@ If you have `make` you can use the following commands to automate the build and 
 make build
 make run
 ```
+
+To view the threads as a program is running: `ps -aLf`

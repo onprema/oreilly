@@ -41,9 +41,8 @@ def visit_website(url):
     try:
         response = requests.get(url) 
         print(f'{url} returned {response.status_code} after {response.elapsed} seconds')
-    except ssl.SSLCertVerificationError as e:
-        pass
-    except requests.exceptions.SSLError as e:
+    except Exception as e:
+        print(f'Failed to connect to {url}')
         pass
 
 

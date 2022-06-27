@@ -6,7 +6,6 @@ import ssl
 
 
 WEBSITES = [
-    'http://en.kremlin.ru/',
     'http://mfa.go.th/main/',
     'http://www.antarctica.gov.au/',
     'http://www.mofa.gov.la/',

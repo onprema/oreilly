@@ -27,4 +27,7 @@ make build
 make run
 ```
 
-To view the threads as a program is running: `ps -aLf`
+## Tips
+
+* To view the threads as a program is running: `ps -aLf`
+* Show information about the current thread: `threading.current_thread()`
